@@ -1,0 +1,445 @@
+:root {
+
+    /* **************************** */
+    /* ********** COLORS ********** */
+    /* **************************** */
+
+    --Gradient-1: linear-gradient(#FF6F48, #F02AA6);
+        --Gradient-1-hover: linear-gradient(#FF6F4888, #F02AA688);
+
+        --Gradient-2: linear-gradient(#4851FF, #F02AA6);
+        --Gradient-2-hover: linear-gradient(#4851FF88, #F02AA688);
+
+        --background-gradient: linear-gradient(#e6e6e6, #8c8c8c);
+
+        --lilac: #666CA3;
+        --dark-blue: #13183F;
+        --blue-gray: #83869A;
+        --hot-pink: #F74780;
+        --pink: #FFA7c3;
+        --white: #FFFFFF;
+        --bg-white: #F0F1FF;
+        --black: #000000;
+        --off-white: #F2F2F2;
+
+
+    /* **************************** */
+    /* ******* FONT STYLES ******** */
+    /* **************************** */
+
+        --boldest: 800;
+        --bold: 700;
+        --normal: 500;
+
+        --XL-font-size: 40px;
+        --XL-line-height: 50.4px;
+
+        --l-heading-font-size: 24px;
+        --l-heading-line-height: 32px;
+
+        --m-heading-font-size: 20px;
+        --m-heading-line-height: 25.2px;
+
+        --light-text-font-size: 16px;
+        --light-text-line-height: 26px;
+
+        --big-bold-text-font-size: 18px;
+        --big-bold-text-line-height: 28px;
+
+        --bold-text-font-size: 16px;
+        --bold-text-line-height: 28px;
+
+
+    /* **************************** */
+    /* ********* GENERAL ********** */
+    /* **************************** */
+
+        --media-width: 375px;
+        --container-width: 343px;
+        --padding-inline: 16px;
+
+
+    /* **************************** */
+    /* ********** HEADER ********** */
+    /* **************************** */
+
+        --nav-margin-top: 16px;
+        --header-container-width: var(--container-width);
+        --header-container-height: var(--nav-btn-height);
+        --skilled-logo-width: 89px;
+        --skilled-logo-height: 35px;
+        --nav-btn-width: 140px;
+        --nav-btn-height: 48px;
+        --nav-btn-bg-color: var(--dark-blue);
+        --nav-btn-border-radius: 28px;
+        --nav-btn-bg-color-hover: var(--lilac);
+
+
+    /* **************************** */
+    /* ********** HERO ************ */
+    /* **************************** */
+
+        --hero-container-width: var(--container-width);
+        --hero-container-padding-bottom: 60px;
+
+        --hero-h1-margin-bottom: 26px;
+
+        --hero-p-margin-bottom: 24px;
+
+        --hero-btn-width: 167px;
+        --hero-btn-height: 56px;
+        --hero-btn-margin-bottom: 46px;
+        --hero-btn-bg-color: var(--Gradient-1);
+        --hero-btn-bg-color-hover: var(--Gradient-1-hover);
+        --hero-btn-border-radius: 31.5px;
+
+        --hero-img-width: 327px;
+        --hero-img-height: 301px;
+
+
+    /* **************************** */
+    /* ********** CARDS *********** */
+    /* **************************** */
+
+
+        --course-height: 120px;
+
+        --course-padding-top: 24px;
+        --course-padding-left: 28px;
+        --course-margin-bottom: 40px;
+
+        --card-width: var(--container-width);
+        --card-height: 259px;
+        --card-border-radius: 10px;
+
+        --icon-offset-top: -24px;
+
+        --card-heading-margin-bottom: 16px;
+
+        --card-text-margin-left: var(--course-padding-left);
+        --card-p-margin-bottom: 24px;
+        --card-p-width: 286px;
+
+        --card-cta-margin-top: 24px;
+        --card-cta-width: 104px;
+
+
+    /* **************************** */
+    /* ********* FOOTER ********** */
+    /* **************************** */
+
+        --footer-width: var(--media-width);
+        --footer-height: 120px;
+
+        --footer-container-width: var(--container-width);
+        --footer-container-inline: var(--padding-inline);
+        --footer-container-block: 36px;
+
+        --footer-btn-width: 140px;
+        --footer-btn-height: 48px;
+
+}
+
+
+/* **************************** */
+/* **** TEXT COLOR CLASSES **** */
+/* **************************** */
+
+.dk-blue {
+    color: var(--dark-blue);
+}
+
+.btn-text {
+    color: var(--white);
+}
+
+.blue-gray {
+    color: var(--blue-gray);
+}
+
+.hot-pink {
+    color: var(--hot-pink);
+    text-decoration: none;
+}
+
+/* **************************** */
+/* ******** FONT STYLES ******* */
+/* **************************** */
+
+body {font-family: 'Plus Jakarta Sans', sans-serif; font-size: 62.5%;}
+
+.xl-head {
+    font-weight: var(--boldest);
+    font-size: var(--XL-font-size);
+    line-height: var(--XL-line-height);
+}
+
+.l-head {
+    font-weight: var(--boldest);
+    font-size: var(--l-heading-font-size);
+    line-height: var(--l-heading-line-height);
+}
+
+.m-head {
+    font-weight: var(--boldest);
+    font-size: var(--m-heading-font-size);
+    line-height: var(--m-heading-line-height);
+}
+
+.light-text {
+    font-weight: var(--normal);
+    font-size: var(--light-text-font-size);
+    line-height: var(--light-text-line-height);
+}
+
+.big-bold-text {
+    font-weight: var(--bold);
+    font-size: var(--big-bold-text-font-size);
+    line-height: var(--big-bold-text-line-height);
+}
+
+.bold-text {
+    font-weight: var(--bold);
+    font-size: var(--bold-text-font-size);
+    line-height: var(--bold-text-line-height);
+}
+
+
+/* **************************** */
+/* ****** RESET BROWSER ******* */
+/* **************************** */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    width: 100vw;
+}
+
+html, body {
+    min-height: 100vh;
+    }
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* **************************** */
+/* ********** HEADER ********** */
+/* **************************** */
+
+
+header {
+    width: var(--media-width);
+    height: 80px;
+    margin: 0 auto 22px;
+    padding: var(--padding-inline);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skilled-logo {
+    width: var(--skilled-logo-width);
+}
+
+.btn-nav {
+    width: var(--nav-btn-width);
+    height: var(--nav-btn-height);
+    background-color: var(--nav-btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: var(--nav-btn-border-radius);
+}
+
+.btn-nav:hover {
+    background-color: var(--nav-btn-bg-color-hover);
+}
+
+
+/* **************************** */
+/* ********** HERO ********** */
+/* **************************** */
+
+.hero-container {
+    width: var(--media-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: var(--padding-inline);
+    padding-bottom: var(--hero-container-padding-bottom);
+}
+
+.hero-text > h1 {
+    margin-bottom: var(--hero-h1-margin-bottom);
+}
+
+.hero-text > p {
+    margin-bottom: var(--hero-p-margin-bottom);
+}
+
+.btn-cta {
+    width: var(--hero-btn-width);
+    height: var(--hero-btn-height);
+    background-image: var(--Gradient-1);
+    border: none;
+    border-radius: var(--hero-btn-border-radius);
+    margin-bottom: var(--hero-btn-margin-bottom);
+}
+
+.hero-text > h1 {
+    margin-bottom: var(--hero-h1-margin-bottom);
+}
+
+.hero-text > p {
+    margin-bottom: var(--hero-p-margin-bottom);
+}
+
+.btn-cta {
+    width: var(--hero-btn-width);
+    height: var(--hero-btn-height);
+    background-image: var(--Gradient-1);
+    border: none;
+    border-radius: var(--hero-btn-border-radius);
+    margin-bottom: var(--hero-btn-margin-bottom);
+}
+
+.hero-img {
+    width: var(--hero-img-width);
+    height: var(--hero-img-height);
+}
+
+.tablet, .desktop {
+    display: none;
+}
+
+
+/* **************************** */
+/* ********** CARDS ********** */
+/* **************************** */
+
+.card-container {
+    width: var(--media-width);
+    margin: 0 auto;
+    background-image: var(--background-gradient);
+    padding-inline: var(--padding-inline);
+}
+
+.courseContainer {
+    background-image: var(--Gradient-1);
+    width: var(--card-width);
+    height: var(--course-height);
+    border-radius: var(--card-border-radius);
+    margin-bottom: var(--course-margin-bottom);
+}
+
+.courseContainer > h2 {
+    padding-top: var(--course-padding-top);
+    padding-left: var(--course-padding-left);
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-border-radius);
+    margin-bottom: var(--course-margin-bottom);
+    padding-left: var(--card-p-padding-left);
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    top: var(--icon-offset-top);
+    left: var(--course-padding-left);
+}
+
+.card > h3 {
+    margin-bottom: var(--card-heading-margin-bottom);
+    margin-left: var(--course-padding-left);
+}
+
+.card > p {
+    margin-bottom: var(--card-p-margin-bottom);
+    margin-left: var(--course-padding-left);
+}
+
+.card > a {
+    margin-left: var(--course-padding-left);
+}
+
+
+/* **************************** */
+/* ********** FOOTER ********** */
+/* **************************** */
+
+footer {
+    width: var(--media-width);
+    height: var(--footer-height);
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--footer-container-width);
+    height: var(--footer-height);
+    margin-inline: auto;
+}
+
+.btn-footer {
+    width: var(--footer-btn-width);
+    height: var(--footer-btn-height);
+    background-image: var(--Gradient-2);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: var(--hero-btn-border-radius);
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-footer:hover {
+    background-image: var(--Gradient-2-hover);
+}
+
+
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+header, .hero-container, .card-container, footer {
+    border: 1px solid red;
+}
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
+/********* REMOVE BEFORE SUBMITTING*********/
