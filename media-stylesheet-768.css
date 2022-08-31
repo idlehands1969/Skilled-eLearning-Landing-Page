@@ -1,0 +1,95 @@
+@media (min-width: 768px) {
+
+    :root {
+
+        /* **************************** */
+        /* ********* GENERAL ********** */
+        /* **************************** */
+
+            --media-width: 768px;
+            --container-width: 689px;
+
+        /* **************************** */
+        /* ********** HERO ************ */
+        /* **************************** */
+
+            --hero-img-width: 640.71px;
+
+        /* **************************** */
+        /* ********** CARDS *********** */
+        /* **************************** */
+
+            --course-padding-top: 56px;
+            --course-padding-left: 32px;
+
+            --card-width: 339px;   
+            --card-margin-bottom: 56px;
+
+        /* **************************** */
+        /* ********* FOOTER ********** */
+        /* **************************** */
+
+
+    }
+
+    /* **************************** */
+    /* ********** HEADER ********** */
+    /* **************************** */
+
+
+    header {
+        margin-left:  39px;
+    }
+
+    /* *************************** */
+    /* *********** HERO ********** */
+    /* *************************** */
+
+    .hero-container {
+        width: var(--media-width);
+        flex-direction: row;
+        margin-inline: 0;
+        padding-inline: 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-text {
+        margin: 99px 0px 122px 39px;
+        position: relative;
+    }
+
+    .hero-text > h1 {
+        width: 326px;
+    }
+
+    .hero-text > p {
+        width: 398px;
+    }
+
+    .hero-img {
+        position: absolute;
+        top: -122px;
+        left: 385px;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .mobile, .desktop {
+        display: none;
+    }
+    
+    
+    /* **************************** */
+    /* ********** CARDS ********** */
+    /* **************************** */
+    
+    .courseContainer  {
+        height: var(--card-height);
+
+    }
+
+/*******KEEP CODE ABOVE THIS LINE********/
+}
