@@ -10,7 +10,7 @@
         --Gradient-2: linear-gradient(#4851FF, #F02AA6);
         --Gradient-2-hover: linear-gradient(#4851FF88, #F02AA688);
 
-        --background-gradient: linear-gradient(#e6e6e6, #8c8c8c);
+        --background-gradient: linear-gradient(#FFFFFF, #F0F1FF);
 
         --lilac: #666CA3;
         --dark-blue: #13183F;
@@ -56,45 +56,12 @@
 
         --media-width: 375px;
         --container-width: 343px;
-        --padding-inline: 16px;
-
-
-    /* **************************** */
-    /* ********** HEADER ********** */
-    /* **************************** */
-
-        --nav-margin-top: 16px;
-        --header-container-width: var(--container-width);
-        --header-container-height: var(--nav-btn-height);
-        --skilled-logo-width: 89px;
-        --skilled-logo-height: 35px;
-        --nav-btn-width: 140px;
-        --nav-btn-height: 48px;
-        --nav-btn-bg-color: var(--dark-blue);
-        --nav-btn-border-radius: 28px;
-        --nav-btn-bg-color-hover: var(--lilac);
-
 
     /* **************************** */
     /* ********** HERO ************ */
     /* **************************** */
 
-        --hero-container-width: var(--container-width);
-        --hero-container-padding-bottom: 60px;
-
-        --hero-h1-margin-bottom: 26px;
-
-        --hero-p-margin-bottom: 24px;
-
-        --hero-btn-width: 167px;
-        --hero-btn-height: 56px;
-        --hero-btn-margin-bottom: 46px;
-        --hero-btn-bg-color: var(--Gradient-1);
-        --hero-btn-bg-color-hover: var(--Gradient-1-hover);
-        --hero-btn-border-radius: 31.5px;
-
         --hero-img-width: 327px;
-        --hero-img-height: 301px;
 
 
     /* **************************** */
@@ -102,14 +69,12 @@
     /* **************************** */
 
 
-        --course-height: 120px;
-
         --course-padding-top: 24px;
         --course-padding-left: 28px;
-        --course-margin-bottom: 40px;
 
-        --card-width: var(--container-width);
+        --card-width: 343px;
         --card-height: 259px;
+        --card-margin-bottom: 40px;
         --card-border-radius: 10px;
 
         --icon-offset-top: -24px;
@@ -120,7 +85,6 @@
         --card-p-margin-bottom: 24px;
         --card-p-width: 286px;
 
-        --card-cta-margin-top: 24px;
         --card-cta-width: 104px;
 
 
@@ -128,12 +92,7 @@
     /* ********* FOOTER ********** */
     /* **************************** */
 
-        --footer-width: var(--media-width);
         --footer-height: 120px;
-
-        --footer-container-width: var(--container-width);
-        --footer-container-inline: var(--padding-inline);
-        --footer-container-block: 36px;
 
         --footer-btn-width: 140px;
         --footer-btn-height: 48px;
@@ -219,11 +178,8 @@ body {font-family: 'Plus Jakarta Sans', sans-serif; font-size: 62.5%;}
     font: inherit;
 }
 
-body {
-    width: 100vw;
-}
-
 html, body {
+    width: 100vw;
     min-height: 100vh;
     }
 
@@ -232,16 +188,29 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
+
+/* **************************** */
+/* ********** BODY ********** */
+/* **************************** */
+
+
+body {
+    width: var(--media-width);
+    margin: 0 auto;
+}
+
+
 /* **************************** */
 /* ********** HEADER ********** */
 /* **************************** */
 
 
 header {
-    width: var(--media-width);
-    height: 80px;
-    margin: 0 auto 22px;
-    padding: var(--padding-inline);
+    width: var(--container-width);
+    margin-inline:  auto;
+    margin-block: 16px 38px;
+    height: 48px;
+    border: 3px solid red;
 }
 
 .header-container {
@@ -251,74 +220,68 @@ header {
 }
 
 .skilled-logo {
-    width: var(--skilled-logo-width);
+    width: 89px;
+    height: auto;
 }
 
 .btn-nav {
-    width: var(--nav-btn-width);
-    height: var(--nav-btn-height);
-    background-color: var(--nav-btn-bg-color);
-    color: var(--btn-text-color);
+    width: 140px;
+    height: 48px;
+    background-color: var(--dark-blue);
+    color: var(--white);
     border: none;
-    border-radius: var(--nav-btn-border-radius);
+    border-radius: 28px;
 }
 
 .btn-nav:hover {
-    background-color: var(--nav-btn-bg-color-hover);
+    background-color: var(--lilac);
 }
 
 
-/* **************************** */
-/* ********** HERO ********** */
-/* **************************** */
+/* *************************** */
+/* *********** HERO ********** */
+/* *************************** */
 
 .hero-container {
-    width: var(--media-width);
-    margin: 0 auto;
+    width: var(--container-width);
+    margin-inline: auto;
+    margin-bottom: 66px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: var(--padding-inline);
-    padding-bottom: var(--hero-container-padding-bottom);
+}
+
+.hero-text {
+    border: 3px solid green;
+    margin-bottom: 46px;
 }
 
 .hero-text > h1 {
-    margin-bottom: var(--hero-h1-margin-bottom);
+    width: 343px;
+    margin-bottom: 26px;
 }
 
 .hero-text > p {
-    margin-bottom: var(--hero-p-margin-bottom);
+    width: 343px;
+    margin-bottom: 24px;
 }
 
 .btn-cta {
-    width: var(--hero-btn-width);
-    height: var(--hero-btn-height);
+    width: 167px;
+    height: 56px;
     background-image: var(--Gradient-1);
     border: none;
-    border-radius: var(--hero-btn-border-radius);
-    margin-bottom: var(--hero-btn-margin-bottom);
+    border-radius: 31.5px;
 }
 
-.hero-text > h1 {
-    margin-bottom: var(--hero-h1-margin-bottom);
-}
-
-.hero-text > p {
-    margin-bottom: var(--hero-p-margin-bottom);
-}
-
-.btn-cta {
-    width: var(--hero-btn-width);
-    height: var(--hero-btn-height);
-    background-image: var(--Gradient-1);
-    border: none;
-    border-radius: var(--hero-btn-border-radius);
-    margin-bottom: var(--hero-btn-margin-bottom);
+.btn-cta:hover {
+    background-image: var(--Gradient-1-hover);
 }
 
 .hero-img {
     width: var(--hero-img-width);
-    height: var(--hero-img-height);
+    height: auto;
+    border: 3px solid rgb(182, 237, 100);
 }
 
 .tablet, .desktop {
@@ -331,18 +294,16 @@ header {
 /* **************************** */
 
 .card-container {
-    width: var(--media-width);
-    margin: 0 auto;
     background-image: var(--background-gradient);
-    padding-inline: var(--padding-inline);
 }
 
 .courseContainer {
     background-image: var(--Gradient-1);
     width: var(--card-width);
-    height: var(--course-height);
+    height: 120px;
+    margin-inline: auto;
     border-radius: var(--card-border-radius);
-    margin-bottom: var(--course-margin-bottom);
+    margin-bottom: var(--card-margin-bottom);
 }
 
 .courseContainer > h2 {
@@ -354,8 +315,9 @@ header {
     width: var(--card-width);
     height: var(--card-height);
     border-radius: var(--card-border-radius);
-    margin-bottom: var(--course-margin-bottom);
-    padding-left: var(--card-p-padding-left);
+    margin-bottom: var(--card-margin-bottom);
+    margin-inline: auto;
+    border: 1px solid;
 }
 
 .icon {
@@ -397,7 +359,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: var(--footer-container-width);
+    width: var(--container-width);
     height: var(--footer-height);
     margin-inline: auto;
 }
@@ -408,7 +370,7 @@ footer {
     background-image: var(--Gradient-2);
     color: var(--btn-text-color);
     border: none;
-    border-radius: var(--hero-btn-border-radius);
+    border-radius: 28px;
     text-align: center;
     text-decoration: none;
 }
@@ -428,8 +390,8 @@ footer {
 /********* REMOVE BEFORE SUBMITTING*********/
 /********* REMOVE BEFORE SUBMITTING*********/
 /********* REMOVE BEFORE SUBMITTING*********/
-header, .hero-container, .card-container, footer {
-    border: 1px solid red;
+body {
+    border: 3px solid blue;
 }
 /********* REMOVE BEFORE SUBMITTING*********/
 /********* REMOVE BEFORE SUBMITTING*********/
