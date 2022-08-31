@@ -1,0 +1,98 @@
+@media (min-width: 1440px) {
+
+    :root {
+        
+        /* **************************** */
+        /* ********* GENERAL ********** */
+        /* **************************** */
+
+        --media-width: 1440px;
+        --container-width: 1110px;
+
+
+        /* **************************** */
+        /* ********** HEADER ********** */
+        /* **************************** */
+
+        --btn-nav-foot-width: 167px;
+        --btn-nav-foot-height: 56px;
+
+        /* **************************** */
+        /* ********** HERO ************ */
+        /* **************************** */
+
+        --hero-img-width: 991.63px;
+
+
+        /* **************************** */
+        /* ********** CARDS *********** */
+        /* **************************** */
+
+        --course-padding-top: 64px;
+
+        --card-height: 322px;
+        --card-width: 350px;   
+        --card-margin-bottom: 80px;
+        --card-border-radius: 15px;
+        --card-heading-margin-bottom: 24px;
+
+
+        /* **************************** */
+        /* ********* FOOTER ********** */
+        /* **************************** */
+
+        --footer-btn-width: 167px;
+        --footer-btn-height: 56px;
+
+    }
+
+    /* **************************** */
+    /* ********** HEADER ********** */
+    /* **************************** */
+
+
+    header {
+        margin-left:  165px;
+    }
+
+    .skilled-logo {
+        width: 114px;
+    }
+    
+    /* *************************** */
+    /* *********** HERO ********** */
+    /* *************************** */
+
+    .hero-text {
+        margin: 172px 0px 240px 165px;
+    }
+
+    .hero-text > h1 {
+        width: 457px;
+    }
+
+    .hero-text > p {
+        width: 445px;
+    }
+
+    .btn-cta {
+        height: 63px;
+    }
+
+
+    .hero-img {
+        top: -246.13px;
+        left: 744px;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile, .tablet {
+        display: none;
+    }
+    
+    
+/*******KEEP MEDIA QUERY 1440 CODE ABOVE THIS LINE********/
+}
